@@ -226,9 +226,9 @@ return {
 //
 /////////////////////////////////////////////////////////////////////////////
 
-// Logging v1 submission function
+// Logging v18 submission function
 // submits to the google form at this URL:
-// docs.google.com/forms/d/e/1FAIpQLSeVPQRcJ-QTRUg6iVzxVv-MSpezkJ-lfdEt4sdmDsVzCGG3lg/viewform?usp=sf_link
+// docs.google.com/forms/d/e/1FAIpQLSc3PqMTssGd5d_aLCK012VMXz7_UBLe1oXdxPZFI0eFaeyOig/viewform?usp=sf_link
 function sendNetworkLog(
   uid,
   timeMs,
@@ -238,7 +238,7 @@ function sendNetworkLog(
   info,
   state,
   log_version) {
-var formid = "e/1FAIpQLSeVPQRcJ-QTRUg6iVzxVv-MSpezkJ-lfdEt4sdmDsVzCGG3lg";
+var formid = "e/1FAIpQLSc3PqMTssGd5d_aLCK012VMXz7_UBLe1oXdxPZFI0eFaeyOig";
 var data = {
   "entry.1613142373": uid,
   "entry.1589787878": timeMs,
@@ -257,7 +257,6 @@ for (var key in data) {
 (new Image).src = "https://docs.google.com/forms/d/" + formid +
    "/formResponse?" + params.join("&");
 }
-
 export default loggingjs.logEvent;
 
 
